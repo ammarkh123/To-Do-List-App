@@ -1,0 +1,149 @@
+/* start General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.br-none {
+    outline: none;
+    border: none;
+}
+
+/* End General Styles */
+/* start toDo-App */
+.toDo-App {
+    max-width: 540px;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.toDo-App h2 {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toDo-App h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* start row styling */
+.row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edeef0;
+    padding: 10px 0 10px 20px;
+    border-radius: 40px;
+    margin-bottom: 25px;
+}
+
+.row input {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.row #Add-btn {
+    position: absolute;
+    right: 0;
+    padding: 16px 50px;
+    border-radius: 40px;
+    background-color: #ff4800;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 10px 8px 10px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    background-image: url("images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked:before {
+    background-image: url("images/checked.png");
+}
+
+ul li span.x-icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #555;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+ul li span.x-icon:hover {
+    background-color: #edeef0;
+}
+
+.x-icon::before {
+    content: "\00D7";
+}
+
+/* end row styling */
+/* End toDo-App */
+/* Start footer */
+footer.foot {
+    padding: 10px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px 0px 7px 0px inset #fff;
+}
+
+.foot .rights {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.foot .rights .foot-author {
+    color: #ff5900;
+}
+
+/* End footer */
