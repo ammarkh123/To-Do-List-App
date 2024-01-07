@@ -3,8 +3,7 @@ const listContainer = document.getElementById("list-container");
 const addBtn = document.getElementById("Add-btn");
 function addTask() {
   if (inputBox.value == "") {
-    let Alert = alert("You must write something!");
-    Alert = document.style.color = "red";
+    alert("You must write something!");
   } else {
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;

@@ -23,6 +23,19 @@ body {
 }
 
 /* End General Styles */
+/* free palestine */
+.container .free {
+    text-align: center;
+    color: #d0d0d0;
+    font-size: 20px;
+}
+
+.container .free img {
+    margin-left: 5px;
+    width: 25px;
+}
+
+/* End free palestine */
 /* start toDo-App */
 .toDo-App {
     max-width: 540px;
@@ -30,13 +43,14 @@ body {
     margin: 100px auto 75px;
     background-color: #fff;
     border-radius: 10px;
-    z-index: 100;
 }
 
-.toDo-App h2 {
-    font-size: 17px;
+.container .toDo-App h2 {
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: right;
     margin-bottom: 20px;
 }
 
@@ -62,6 +76,10 @@ body {
     padding: 10px;
 }
 
+.row input::placeholder {
+    font-size: 15px;
+}
+
 .row #Add-btn {
     position: absolute;
     right: 0;
@@ -71,7 +89,8 @@ body {
     color: #fff;
     text-align: center;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 ul li {
@@ -102,6 +121,7 @@ ul li.checked {
 }
 
 ul li.checked:before {
+    content: "";
     background-image: url("images/checked.png");
 }
 
