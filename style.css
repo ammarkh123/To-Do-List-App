@@ -82,8 +82,8 @@ body {
 
 .row #Add-btn {
     position: absolute;
-    right: 0;
-    padding: 16px 50px;
+    right: 5px;
+    padding: 12px 40px;
     border-radius: 40px;
     background-color: #ff4800;
     color: #fff;
